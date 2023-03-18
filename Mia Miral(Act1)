@@ -1,0 +1,43 @@
+# Model
+class UserModel:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+# View
+class UserView:
+    def display_user(self, user):
+        print("Name: ", user.name)
+        print("Email: ", user.email)
+
+# Controller
+class UserController:
+    def __init__(self, model, view):
+        self.model = model
+        self.view = view
+
+    def set_name(self, name):
+        self.model.name = name
+
+    def set_email(self, email):
+        self.model.email = email
+
+    def update_view(self):
+        self.view.display_user(self.model)
+
+# Usage
+if __name__ == "__main__":
+    # Create a user model
+    user = UserModel("Mia Miral", "mia.miral@gmail.com")
+
+    # Create a view to display the user
+    view = UserView()
+
+    # Create a controller to update the user and display the view
+    controller = UserController(user, view)
+
+    # Update the user's email
+    controller.set_email("new.email@example.com")
+
+    # Display the updated user information
+    controller.update_view()
