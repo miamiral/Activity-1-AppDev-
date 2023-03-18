@@ -41,3 +41,13 @@ if __name__ == "__main__":
 
     # Display the updated user information
     controller.update_view()
+    
+    
+// In this code, the "UserModel" class represents the data model, which in this case is a simple user object with a name and email. 
+// The "UserView" class is responsible for displaying the user data to the user, 
+// while the "UserController" class acts as an intermediary between the model and the view.
+
+// The controller receives input from the user and updates the model accordingly. It also updates the view to reflect any changes made to the model. 
+// In this code, we update the user's email and then display the updated user information using the update_view() method of the controller.
+// This code example is a simple illustration of the MVC pattern in action.
+// In practice, the pattern can be used to build more complex applications with more new data models, views, and controllers.
