@@ -37,7 +37,7 @@ if __name__ == "__main__":
     controller = UserController(user, view)
 
     # Update the user's email
-    controller.set_email("new.email@example.com")
+    controller.set_email("mia.miral@gmail.com")
 
     # Display the updated user information
     controller.update_view()
